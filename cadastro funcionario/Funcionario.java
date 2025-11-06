@@ -37,10 +37,11 @@ public class Funcionario {
         return salario;
     }
 
-    // o método toString apresenta tudo em uma linha e é sobrescrito na classe Atendente, para retornar também a comissão
+    // o método toString apresenta tudo em uma linha e é sobrescrito nas subclasses para retornar também a comissão ou o bonus
     @Override
     public String toString() {
         return "Nome: " + nome + " | CPF: " + cpf + " | Salário base: R$ " + salario + " | Salário total: R$ " + calcularSalario() + 
                " | Nascimento: " + dataNascimento;
     }
 }
+
